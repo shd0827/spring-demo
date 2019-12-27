@@ -1,0 +1,26 @@
+spring:
+  Profiles:
+    #设置启动访问哪个环境的配置
+    application:
+      name: spring-dome
+  #spring配置上传默认文件大小
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    hikari:
+      auto-commit: true
+      connection-test-query: SELECT 1
+      connection-timeout: 60000
+      idle-timeout: 180000
+      max-lifetime: 1800000
+      maximum-pool-size: 100
+      minimum-idle: 10
+      pool-name: MyHikariCP
+    password: 123456
+    url: jdbc:mysql://mysqlhost:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root

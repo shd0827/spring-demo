@@ -1,0 +1,12 @@
+.settings/
+.project
+target/
+.classpath
+.idea/
+applog/
+echo.iml
+*/echo-api.iml
+uploads/
+nohup.out
+java_start.sh
+*.pdf
